@@ -1,0 +1,101 @@
+Run_Analysis.R code book
+
+
+The assignment is for getting and cleaning data course in coursera data science specialisation.
+
+the data obtained is from
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+the R script created is Run_Analysis.R and the product of the r.script is the tidy_data.txt
+
+dplyr and reshape2 packages were used for the script. the data was downloaded and unziped to a file in the computer,
+these were then read into Rstudio via read.table
+
+the followind items were read as data in the Run_Analysis.
+
+features from features.txt
+activity_labels from activity_labels.txt
+
+x_train from X_train.txt
+subject_train from subject_train.txt and its column was named "subject"
+y_train fron y_train.txt and the colunm was named "activity"
+x_test from X_test.txt
+subject_test from subject_test.txt and its column was named "subject"
+y_test <- read.table("y_train.txt", and the colunm was named "activity"
+
+
+STEP 1: merge the training and test data
+STEP 2: extract only the measurements on mean and std deviation for each measurements
+STEP 3: use descriptive activity  names to name the activities
+STEP 4: Appropriately labels the data set with descriptive variable name 
+STEP 5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for
+each activity and each subjectwrite the tidy as tidy_data.txt
+
+the following are the variables left after in tidy_data for each "subject" and their "activity". please note that the 
+subject and activity are also colums in the tidy_data
+tBodyAcc_mean_X
+tBodyAcc_mean_Y
+tBodyAcc_mean_Z
+tGravityAcc_mean_X
+tGravityAcc_mean_Y
+tGravityAcc_mean_Z
+tBodyAccJerk_mean_X
+tBodyAccJerk_mean_Y
+tBodyAccJerk_mean_Z
+tBodyGyro_mean_X
+tBodyGyro_mean_Y
+tBodyGyro_mean_Z
+tBodyGyroJerk_mean_X
+tBodyGyroJerk_mean_Y
+tBodyGyroJerk_mean_Z
+tBodyAccMag_mean
+tGravityAccMag_mean
+tBodyAccJerkMag_mean
+tBodyGyroMag_mean
+tBodyGyroJerkMag_mean
+fBodyAcc_mean_X
+fBodyAcc_mean_Y
+fBodyAcc_mean_Z
+fBodyAccJerk_mean_X
+fBodyAccJerk_mean_Y
+fBodyAccJerk_mean_Z
+fBodyGyro_mean_X
+fBodyGyro_mean_Y
+fBodyGyro_mean_Z
+fBodyAccMag_mean
+fBodyAccJerkMag_mean
+fBodyGyroMag_mean
+fBodyGyroJerkMag_mean
+tBodyAcc_std_X
+tBodyAcc_std_Y
+tBodyAcc_std_Z
+tGravityAcc_std_X
+tGravityAcc_std_Y
+tGravityAcc_std_Z
+tBodyAccJerk_std_X
+tBodyAccJerk_std_Y
+tBodyAccJerk_std_Z
+tBodyGyro_std_X
+tBodyGyro_std_Y
+tBodyGyro_std_Z
+tBodyGyroJerk_std_X
+tBodyGyroJerk_std_Y
+tBodyGyroJerk_std_Z
+tBodyAccMag_std
+tGravityAccMag_std
+tBodyAccJerkMag_std
+tBodyGyroMag_std
+tBodyGyroJerkMag_std
+fBodyAcc_std_X
+fBodyAcc_std_Y
+fBodyAcc_std_Z
+fBodyAccJerk_std_X
+fBodyAccJerk_std_Y
+fBodyAccJerk_std_Z
+fBodyGyro_std_X
+fBodyGyro_std_Y
+fBodyGyro_std_Z
+fBodyAccMag_std
+fBodyAccJerkMag_std
+fBodyGyroMag_std
+fBodyGyroJerkMag_std
